@@ -1,0 +1,893 @@
+body {
+	font-family: Tahoma, 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: #222;
+	overflow-x: hidden;
+}
+
+a {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.topbar {
+	min-height: 32px;
+	background-color: #333;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: fixed;
+	padding-top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 990;
+}
+
+	.topbar #topbar-right {
+		float: right;
+		list-style: none;
+		padding-top: 16px;
+		padding-right: 17%;
+	}
+
+		#topbar-right li {
+			padding-right: 10px;
+			display: inline-block;
+			color: #fff !important;
+			font-size: 16px;
+			font-style: italic;
+		}
+
+	.topbar .fa.fa-angle-down {
+		position: absolute;
+		top: 0px;
+		cursor: pointer;
+		font-size: 2em;
+		right: 18% !important;
+	}
+	
+		.topbar .fa.fa-angle-down:hover {
+			color: green;
+		}	
+
+#heading {
+	float: left;
+	letter-spacing: 2px;
+	padding-left: 16%;
+	cursor: default;
+	color: #333;
+	font-family: tahoma;
+	-moz-text-stroke-width: 1px;
+	-moz-text-stroke-color: #fff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fff;
+}
+
+	#heading .fa-bars {
+		font-size: 24px !important;
+		vertical-align: 5px;
+		cursor: pointer;
+		background: none;
+		padding: 4px;
+		color: #fff;
+		-moz-text-stroke: 0px #fff;
+		-webkit-text-stroke: 0px #fff;
+		transition: all ease-in-out 200ms;
+		-moz-transition: all ease-in-out 200ms;
+		-webkit-transition: all ease-in-out 200ms;
+	}
+
+		#heading .fa-bars:hover {
+			color: green;
+		}
+
+#sidemenu {
+	width: 15%;
+	background-color: #333;
+	box-shadow: 0.2vw 1vw 1vw black;
+	-moz-box-shadow: 0.2vw 1vw 1vw black;
+	-webkit-box-shadow: 0.2vw 1vw 1vw black;
+	position: absolute;
+	top: 0;
+	left: -16%;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 1000;
+	transition: all ease-in-out 200ms;
+	-moz-transition: all ease-in-out 200ms;
+	-webkit-transition: all ease-in-out 200ms;
+}
+
+.sidemenu {
+	left: 0% !important;
+}
+
+	#sidemenu ul {
+		padding: 100px 10px 0px 30px;
+	}
+
+		#sidemenu ul li {
+			text-decoration: none;
+			font-size: 14px;
+			list-style: none;
+			padding-top: 30px;
+			text-transform: uppercase;
+		}
+
+			#sidemenu a {
+				color: #fff;
+			}
+
+				#sidemenu a:hover {
+					color: rgba(255, 255, 255, 0.5);
+				}
+
+				#sidemenu ul li a span {
+					width: 30px;
+					font-size: 20px;
+					vertical-align: middle;
+					padding-right: 10px;
+					text-align: right;
+				}
+
+.background {
+	padding-top: 100px;
+	width: 68% !important;
+	margin: auto;
+	text-align: center;
+}
+
+	.content-bg {
+		width: 100% !important;
+	}
+
+input[type="text"], input[type="password"] {
+	border: none;
+	box-shadow: 3px 3px 10px #999;
+	background-color: #f8f8f8;
+	margin: 16px auto 20px auto;
+	padding: 10px;
+	font-size: 16px;
+	color: black;
+	width: 60%;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+	box-shadow: 4px 4px 10px #777;
+}
+
+input[type="text"]:focus , input[type="password"]:focus {
+	box-shadow: 5px 5px 10px #555;
+	outline: none;
+	color: #222;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+	outline: none;
+}
+
+#search-form input {
+	padding: 5px;
+	border: none;
+	font-size: 16px;
+}
+
+	#search-form input:focus {
+		outline: none;
+	}
+
+	#search-form input[type="search"] {
+		border: none;
+		color: #fff;
+		background-color: rgb(0, 0, 0);
+		font-size: 14px;
+		height: 36px;
+		padding-left: 8px;
+		width: 260px;
+	}
+
+	#search-form input[type="search"]:hover {
+		cursor: text;
+	}
+
+	#search-form input[type="search"]:focus {
+		background-color: rgb(0, 0, 0);
+	}
+
+	#search-form input[type="submit"] {
+		border: none;
+		height: 36px;
+		background-color: green;
+		color: #fff;
+		margin-left: -6px;
+		padding: 0px 10px;
+		box-shadow: none;
+	}
+
+	#search-form input[type="submit"]:hover {
+		cursor: pointer;
+		background-color: lightgreen;
+		color: green;
+		box-shadow: 2px 2px 10px #000;
+	}
+
+	li a .fa-user,
+	li a .fa-shopping-cart {
+		color: #fff;
+		font-size: 22px;
+	}
+
+		li a .fa-user:hover,
+		li a .fa-shopping-cart:hover {
+			color: green;
+		}
+
+#signout-form input {
+		color: #fff;
+		font-size: 16px;
+		padding: 0px 10px;
+		background-color: red;
+		border: none;
+		box-shadow: none;
+		height: 36px;
+}
+
+	#signout-form input:hover {
+		background-color: rgb(255, 136, 136);
+		color: red;
+		cursor: pointer;
+		box-shadow: 2px 2px 10px #000;
+	}
+
+	#signout-form input:focus {
+		outline: none;
+	}
+
+button[type="submit"] {
+	color: #fff;
+	font-size: 18px;
+	padding: 7px 14px;
+	margin: 10px;
+	background-color: green;
+	border: none;
+	box-shadow: 2px 2px 10px darkgreen;
+} 
+
+button[type="submit"]:hover {
+	cursor: pointer;
+	background-color: lightgreen;
+	color: green;
+	box-shadow: 3px 3px 10px green;
+}
+
+button[type="submit"]:focus {
+	outline: none;
+}
+
+.upload {
+	width: 20%;
+	margin: auto;
+}
+
+#good {
+	text-align: center;
+	font-style: italic;
+	color: green;
+	font-size: 14px;
+}
+
+#bad {
+	font-style: italic;
+	text-align: center;	
+	color: red;
+	font-size: 14px;
+}
+
+	.upload p {
+		color: #fff;
+		font-size: 18px;
+		max-height: 36px;
+		margin: 140px auto 40px auto;
+		background-color: green;
+		text-align: center;
+		padding: 9px 0px;
+		box-shadow: 2px 2px 10px darkgreen;
+	}
+
+		.upload p:hover {
+			cursor: pointer;
+			background-color: lightgreen;
+			color: green;
+			box-shadow: 3px 3px 10px #999;
+		}
+
+.uploadProduct {
+	font-weight: bold;
+	width: 68%;
+	margin: auto;
+	padding: 20px 0;	
+}
+
+	.uploadProduct div {
+		box-shadow: 0px 0px 10px 4px #eee;
+		background-color: #f7f7f7;
+		padding: 10px;
+	}
+
+	.uploadProduct div:hover {
+		box-shadow: 0px 0px 10px 4px #ccc;
+	}
+
+	.uploadProduct label, .uploadProduct input {
+		display: inline-block;
+	}
+
+	.uploadProduct label {
+		width: 25%;
+		text-align: right;
+	}
+
+	.uploadProduct form input, .uploadProduct form select, .uploadProduct form textarea {
+		color: #444;
+		font-size: 16px;
+		border: none;
+		background-color: #f9f9f9;
+		box-shadow: 3px 3px 10px #888;
+		padding: 8px;
+		width: 60%;
+		margin-left: 20px;
+		font-family: Tahoma;
+	}
+
+	.uploadProduct form select {
+		width: 62% !important;
+	}
+
+	.uploadProduct form textarea {
+		resize: none;
+	}
+
+	.uploadProduct form input:hover, .uploadProduct form select:hover, .uploadProduct form textarea:hover {
+		box-shadow: 3px 3px 10px #666;
+	}
+
+	.uploadProduct form input:focus, .uploadProduct form select:focus, .uploadProduct form textarea:focus {
+		background-color: #f9f9f9;
+		box-shadow: 3px 3px 10px #444;
+		outline: none;
+		color: #000;
+		font-family: Tahoma;
+	}
+
+	.uploadProduct form input[type="submit"] {
+		color: #fff;
+		font-size: 16px;
+		margin: 10px 4% 10px 38%;
+		background-color: green;
+		border: none;
+		box-shadow: none;
+		height: 36px;
+		width: 10%;		
+		text-align: center;
+	}
+
+	.uploadProduct form input[type="submit"]:hover {
+		cursor: pointer;
+		background-color: lightgreen;
+		box-shadow: 3px 3px 10px #999;
+		color: green;	
+	}
+
+	.uploadProduct form input[type="file"] {
+		width: 0.1px;
+		height: 0.1px;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+
+	.uploadProduct form input[type="file"] + #Ilabel {
+		color: #fff;
+		font-size: 16px;
+		font-weight: lighter;
+		max-height: 36px;
+		padding: 9px 0px;
+		margin: 10px 10px 10px 20px;
+		background-color: green;
+		border: none;
+		box-shadow: none;
+		width: 15%;		
+		text-align: center;		
+	}
+
+	.uploadProduct form input[type="file"] + #Ilabel:hover {
+		background-color: lightgreen;
+		color: green;
+		box-shadow: 3px 3px 10px #999;
+		cursor: pointer;
+	}
+
+	.uploadProduct form input[type="button"] {
+		color: #fff;
+		font-size: 16px;
+		height: 36px;
+		margin: 10px auto;
+		background-color: red;
+		border: none;
+		box-shadow: none;
+		width: 10%;		
+		text-align: center;
+	}
+
+	.uploadProduct form input[type="button"]:hover {
+		box-shadow: 3px 3px 10px #999;
+		cursor: pointer;
+		background-color: rgb(255, 136, 136);
+		color: red;		
+	}
+
+.wrapper {
+	width: 68%;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;	
+}
+
+	.wrapper .row {
+		width: 100%;
+	}
+
+		.row .column1, .row .column2, .row .column3 {
+			width: calc(100% / 3 - 1%);
+			height: 360px;
+			border: none;
+			box-shadow: 3px 3px 10px #bbb;
+			background-color: #f8f8f8;
+			display: inline-block;
+		}
+
+		.row .column1:hover, .row .column2:hover, .row .column3:hover {
+			box-shadow: 3px 3px 10px #999;
+		}
+
+			.column1 img, .column2 img, .column3 img {
+				height: 300px;
+				width: 100%;
+			}
+
+			.row p {
+				text-align: center;
+			}
+
+			p #h1 {
+				font-size: 24px;
+				font-weight: bold;
+				color: #444;
+			}
+
+#error {
+	color: red;
+	font-size: 14px;
+}
+
+/*_______________________________________________________________________*/
+/*______________INDEX AND HOMEPAGE ENDS HERE_____________________________*/
+/*___________ABOUT US PAGE IS ABOUT TO START_____________________________*/
+/*_______________________________________________________________________*/
+
+.content {
+	float: left;
+	padding: 120px 0px 40px 16%;
+	width: 32%;
+}
+
+	.content section {
+		border: none;
+		box-shadow: 3px 3px 10px #bbb;
+		padding: 20px;
+		margin: 30px 5px;
+		font-size: 16px; 
+		background-color: #f8f8f8;
+	}
+
+		.content section b {
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 28px;
+		}
+
+.maps {
+	width: 31%;
+	height: 450px;
+	border: none;
+	box-shadow: 3px 3px 10px #bbb;
+	color: #444;
+	float: right;
+	margin: 140px 16% 0px 0px;
+	text-align: center;
+	background-color: #f8f8f8;
+}	
+
+	.maps:hover {
+		box-shadow: 3px 3px 10px #999;
+	}
+
+	.maps iframe {
+		width: 100%;
+		height: 390px;
+	}
+
+/*__________________________CONTACT STARTS HERE____________________________*/
+
+.message {
+	padding-top: 120px;
+}
+
+	.message h1 {
+		text-align: center;	
+	}
+
+	.message form input, 
+	.message form textarea {
+		margin-top: 16px;
+		padding: 10px;
+		font-family: Tahoma, Helvetica, sans-serif;
+	}
+
+	.message form textarea {
+		margin-top: 28px;
+	}
+
+	.message form input:focus,
+	.message form textarea:focus {
+		font-family: Tahoma;
+	}
+
+	.message form input[type="submit"] {
+		margin-left: 45%; 
+	}
+
+.followus {
+	color: #444;
+}
+
+	.followus h2 {
+		text-align: center;
+	}
+
+	.followus .social {
+		padding: 20px 0px 40px 0px;
+	}
+
+	.followus .social ul {
+		text-align: center;
+		padding-right: 2.5% !important;
+	}
+	
+		.followus .social ul li {
+			list-style: none;
+			font-size: 46px;
+			cursor: pointer;
+			color: #666;
+			padding: 0px 40px;
+			display: inline-block;
+		}
+
+		.followus .social ul li a {
+			text-decoration: none;
+			color: #999;
+		}
+
+		.followus .social a:hover {
+			color: green !important;
+		}	
+
+/*____________PRODCT DETAILS_____________*/
+
+.product-details,
+.discuss,
+.add-comment {
+	width: 68%;
+	margin: auto;
+}	
+
+.product-details {
+	padding-top: 120px;
+}
+
+.product-details div {
+	float: left;
+}
+
+.product-details .pdetails {
+	padding-left: 20px;	
+	width: 70%;
+}
+
+#pbi {
+	text-align: center;
+	font-size: 14px;
+	color: green;
+	clear: both;
+	padding-top: 40px;
+}
+
+.add-comment {
+	padding-bottom: 60px;
+}
+
+.add-comment form input[type="number"] {
+	color: #444;
+	font-size: 16px;
+	border: none;
+	background-color: #f9f9f9;
+	box-shadow: 3px 3px 10px #888;
+	padding: 10px;
+	width: 40%;
+	resize: none;
+	font-family: Tahoma;	
+}
+
+.add-comment form input[type="number"]:hover {
+	box-shadow: 3px 3px 10px #666;
+}
+
+.add-comment form input[type="number"]:focus {
+	background-color: #f9f9f9;
+	box-shadow: 3px 3px 10px #444;
+	outline: none;
+	color: #000;
+	font-family: Tahoma;
+}
+
+.add-comment form input[type="submit"] {
+	border: none;
+	font-size: 1em;
+	height: 36px;
+	background-color: green;
+	color: #fff;
+	margin-left: ;
+	padding: 0px 10px;
+	box-shadow: none;
+}
+
+.add-comment form input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: lightgreen;
+	color: green;
+	box-shadow: 2px 2px 10px #000;
+}
+
+.add-comment form input[type="submit"]:focus {
+	outline: none;
+}
+
+#comment span {
+	color: green;
+	font-size: 1.1em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#comment span span {
+	color: black;
+	font-size: 0.6em;
+	text-decoration: none !important;
+}
+#comment {
+	font-size: 1em;
+}
+
+.discuss p {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1em;
+}
+
+.user-choice {
+	position: fixed !important;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 60px;
+	background-color: #333;
+	color: #fff;
+}
+
+.user-choice form {
+	width: 68%;
+	margin: 0 auto;
+}
+
+.user-choice form fieldset {
+	border: none;
+	text-align: right;
+}
+
+.user-choice form input {
+	padding: 5px;
+	border: none;
+	font-size: 16px;
+	max-height: 32px !important;
+}
+
+.user-choice form input[type="text"] {
+	border: none;
+	color: #fff;
+	background-color: rgb(0, 0, 0);
+	box-shadow: none;
+	font-size: 16px;
+	padding: 10px;
+	width: 260px;
+}
+.user-choice form input[type="text"]:focus {
+	box-shadow: 3px 3px 10px #000;
+	background-color: rgb(0, 0, 0);
+}
+
+.user-choice form input[type="submit"] {
+	border: none;
+	background-color: green;
+	color: #fff;
+	margin-left: -6px;
+	font-size: 16px;
+	padding: 10px 10px 28px 10px !important;
+	box-shadow: none;
+}
+.user-choice form input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: lightgreen;
+	color: green;
+	box-shadow: 2px 2px 10px #000;
+}
+
+.user-choice form label {
+	float: left;
+	padding-top: 50px;
+}
+.user-choice form small {
+	clear: both;	
+}
+
+/*_______________CHATS______________*/
+
+.toconversions {
+	padding-top: 120px;
+	width: 68%;
+	margin: auto;
+}
+
+.toconversions p {
+	text-align: center;
+	color: green;
+}
+.toconversions span {
+	color: red;
+	text-align: center !important;
+}
+.toconversions .link-conversion {
+	color: black !important;
+	padding: 10px 30px;
+	text-align: left !important; 
+	background-color: #f0f0f0;
+	box-shadow: 5px 5px 10px #999;
+	margin-bottom: 10px;
+}
+.toconversions .link-conversion p {
+	text-align: left;
+	color: black;
+}
+.toconversions .link-conversion span a {
+	color: teal !important;
+	text-decoration: underline;
+}
+.toconversions .link-conversion:hover {
+	box-shadow: 5px 5px 10px #666;
+}
+.toconversions .link-conversion:focus {
+	box-shadow: 5px 5px 10px #333;
+}
+
+/*______________Conversations_____________*/
+.show-chat {
+	padding-top: 120px;
+	width: 68%;
+	margin: auto;
+	padding-bottom: 60px;
+}
+
+.show-chat p {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+.show-chat span,
+.chatting span,
+.show-chat small,
+.chatting small {
+	color: #999;
+}
+
+.chatting {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 40px;
+	background-color: #333;
+	color: #fff;
+}
+
+.chatting div {
+	width: 68%;
+	margin: 10px auto;
+}
+
+.chatting #adding {
+	float: left;
+	margin: 0;
+}
+
+#adding input[type="text"] {
+	border: none;
+	color: #fff;
+	background-color: rgb(0, 0, 0);
+	box-shadow: none;
+	font-size: 16px;
+	padding: 10px;
+	width: 260px;
+}
+#adding input[type="text"]:focus {
+	box-shadow: 3px 3px 10px #000;
+	background-color: rgb(0, 0, 0);
+}
+#adding input[type="submit"] {
+	border: none;
+	background-color: green;
+	color: #fff;
+	margin-left: -6px;
+	font-size: 16px;
+	padding: 10px 10px 10px 10px !important;
+	box-shadow: none;	
+}
+#adding input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: lightgreen;
+	color: green;
+	box-shadow: 2px 2px 10px #000;	
+}
+
+#delete {
+	text-align: center;
+}
+#delete input {
+	color: #fff;
+	padding: 0 10px;
+	font-size: 16px;
+	height: 36px;
+	margin: 10px auto;
+	background-color: red;
+	border: none;
+	box-shadow: none;		
+	text-align: center;
+}
+#delete input:hover {
+	cursor: pointer;
+	background-color: rgb(255, 136, 136);
+	color: red;
+}
